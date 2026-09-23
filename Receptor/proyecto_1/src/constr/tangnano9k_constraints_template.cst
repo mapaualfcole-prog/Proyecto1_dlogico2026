@@ -1,0 +1,89 @@
+IO_LOC  "clk" 52;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC  "btn1" 3;
+IO_PORT "btn1" IO_TYPE=LVCMOS18;
+
+IO_LOC  "btn2" 4;
+IO_PORT "btn2" IO_TYPE=LVCMOS18;
+
+IO_LOC  "led[0]" 10;
+IO_PORT "led[0]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "led[1]" 11;
+IO_PORT "led[1]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "led[2]" 13;
+IO_PORT "led[2]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "led[3]" 14;
+IO_PORT "led[3]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "led[4]" 15;
+IO_PORT "led[4]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "led[5]" 16;
+IO_PORT "led[5]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "display[0]" 72;
+IO_PORT "display[0]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "display[1]" 73;
+IO_PORT "display[1]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "display[3]" 71;
+IO_PORT "display[3]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "display[4]" 74;
+IO_PORT "display[4]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "display[5]" 77;
+IO_PORT "display[5]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "display[6]" 75;
+IO_PORT "display[6]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "display[2]" 76;
+IO_PORT "display[2]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "sindrome_cmos[0]" 57;
+IO_PORT "sindrome_cmos[0]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "sindrome_cmos[1]" 68;
+IO_PORT "sindrome_cmos[1]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "sindrome_cmos[2]" 69;
+IO_PORT "sindrome_cmos[2]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "palabra_rx[7]" 40;
+IO_PORT "palabra_rx[7]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "palabra_rx[6]" 35;
+IO_PORT "palabra_rx[6]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "palabra_rx[5]" 41;
+IO_PORT "palabra_rx[5]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "palabra_rx[4]" 42;
+IO_PORT "palabra_rx[4]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "palabra_rx[3]" 51;
+IO_PORT "palabra_rx[3]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "palabra_rx[2]" 53;
+IO_PORT "palabra_rx[2]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "palabra_rx[1]" 54;
+IO_PORT "palabra_rx[1]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "palabra_rx[0]" 55;
+IO_PORT "palabra_rx[0]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "paridad_cmos" 56;
+IO_PORT "paridad_cmos" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "seg_enable1" 48;
+IO_PORT "seg_enable1" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "seg_enable2" 49;
+IO_PORT "seg_enable2" DRIVE=8 IO_TYPE=LVCMOS33;
