@@ -1,0 +1,159 @@
+Info: Series:GW1N-9C Device:GW1NR-9C Package:QFN88P Speed:C6/I5
+
+Info: Packing constants..
+Info: Packing Shadow RAM..
+Info: Packing GSR..
+Info: Packing IOs..
+Info: Packing diff IOs..
+Info: Packing IO logic..
+Info: Packing wide LUTs..
+Info: Packing LUT5s..
+Info: Packing LUT6s..
+Info: Packing LUT7s..
+Info: Packing LUT8s..
+Info: Packing ALUs..
+Info: Packing LUT-FFs..
+Info: Packing non-LUT FFs..
+Info: Packing PLLs..
+Info: Checksum: 0x4d650b3b
+
+Info: Annotating ports with timing budgets for target frequency 27.00 MHz
+Info: Checksum: 0x4d650b3b
+
+Info: Device utilisation:
+Info: 	                 VCC:     1/    1   100%
+Info: 	               SLICE:    48/ 8640     0%
+Info: 	                 IOB:    33/  274    12%
+Info: 	                ODDR:     0/  274     0%
+Info: 	           MUX2_LUT5:    12/ 4320     0%
+Info: 	           MUX2_LUT6:     0/ 2160     0%
+Info: 	           MUX2_LUT7:     0/ 1080     0%
+Info: 	           MUX2_LUT8:     0/ 1056     0%
+Info: 	                 GND:     1/    1   100%
+Info: 	                RAMW:     0/  270     0%
+Info: 	                 GSR:     1/    1   100%
+Info: 	                 OSC:     0/    1     0%
+Info: 	                rPLL:     0/    2     0%
+
+Info: Placed 33 cells based on constraints.
+Info: Creating initial analytic placement for 33 cells, random placement wirelen = 1876.
+Info:     at initial placer iter 0, wirelen = 796
+Info:     at initial placer iter 1, wirelen = 738
+Info:     at initial placer iter 2, wirelen = 730
+Info:     at initial placer iter 3, wirelen = 726
+Info: Running main analytical placer, max placement attempts per cell = 10000.
+Info:     at iteration #1, type SLICE: wirelen solved = 727, spread = 775, legal = 772; time = 0.00s
+Info:     at iteration #1, type MUX2_LUT5: wirelen solved = 771, spread = 788, legal = 791; time = 0.00s
+Info:     at iteration #1, type VCC: wirelen solved = 791, spread = 791, legal = 791; time = 0.00s
+Info:     at iteration #1, type GND: wirelen solved = 791, spread = 791, legal = 791; time = 0.00s
+Info:     at iteration #1, type GSR: wirelen solved = 791, spread = 791, legal = 791; time = 0.00s
+Info:     at iteration #1, type ALL: wirelen solved = 736, spread = 788, legal = 787; time = 0.00s
+Info: HeAP Placer Time: 0.01s
+Info:   of which solving equations: 0.00s
+Info:   of which spreading cells: 0.00s
+Info:   of which strict legalisation: 0.00s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 0, wirelen = 787
+Info:   at iteration #5: temp = 0.000000, timing cost = 0, wirelen = 742
+Info:   at iteration #6: temp = 0.000000, timing cost = 0, wirelen = 740 
+Info: SA placement time 0.01s
+
+Info: Max delay <async> -> <async>: 23.68 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 13354,  14459) |** 
+Info: [ 14459,  15564) |**** 
+Info: [ 15564,  16669) |** 
+Info: [ 16669,  17774) | 
+Info: [ 17774,  18879) |* 
+Info: [ 18879,  19984) |* 
+Info: [ 19984,  21089) | 
+Info: [ 21089,  22194) |* 
+Info: [ 22194,  23299) |*** 
+Info: [ 23299,  24404) |************ 
+Info: [ 24404,  25509) |*************************** 
+Info: [ 25509,  26614) |********************************** 
+Info: [ 26614,  27719) |************************ 
+Info: [ 27719,  28824) |************ 
+Info: [ 28824,  29929) |*************** 
+Info: [ 29929,  31034) |*** 
+Info: [ 31034,  32139) |********* 
+Info: [ 32139,  33244) |** 
+Info: [ 33244,  34349) | 
+Info: [ 34349,  35454) |**** 
+Info: Checksum: 0x0f343b4c
+Info: Find global nets...
+Info: Routing globals...
+Info:   Route net u_generador_error.pos_err1[1], use clock #0.
+Info:   Net u_generador_error.pos_err1[1] is routed.
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 208 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:        218 |        6        212 |    6   212 |         0|       0.34       0.34|
+Info: Routing complete.
+Info: Router1 time 0.34s
+Info: Checksum: 0x45614aff
+
+Info: Critical path report for cross-domain path '<async>' -> '<async>':
+Info: curr total
+Info:  0.0  0.0  Source u_generador_error.pos_err1_IBUF_O$iob.O
+Info:  5.6  5.6    Net u_generador_error.pos_err1[2] budget 37.037037 ns (40,28) -> (31,16)
+Info:                Sink u_generador_error.pal_err_MUX2_LUT5_O_5_I0_LUT4_F_I1_MUX2_LUT5_O_I1_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\galve\DOWNLO~1\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  6.6  Source u_generador_error.pal_err_MUX2_LUT5_O_5_I0_LUT4_F_I1_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3  7.0    Net u_generador_error.pal_err_MUX2_LUT5_O_5_I0_LUT4_F_I1_MUX2_LUT5_O_I1 budget 8.801009 ns (31,16) -> (31,16)
+Info:                Sink u_generador_error.pal_err_MUX2_LUT5_O_5_I0_LUT4_F_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\galve\DOWNLO~1\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2  7.1  Source u_generador_error.pal_err_MUX2_LUT5_O_5_I0_LUT4_F_I1_MUX2_LUT5_O_LC.OF
+Info:  1.4  8.5    Net u_generador_error.pal_err_MUX2_LUT5_O_1_I0_LUT4_F_I3[1] budget 8.801009 ns (31,16) -> (33,17)
+Info:                Sink u_generador_error.pal_err_MUX2_LUT5_O_1_I1_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  C:\Users\galve\DOWNLO~1\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  9.6  Source u_generador_error.pal_err_MUX2_LUT5_O_1_I1_LUT4_F_LC.F
+Info:  0.3  9.9    Net u_generador_error.pal_err_MUX2_LUT5_O_1_I1 budget 5.654840 ns (33,17) -> (33,17)
+Info:                Sink u_generador_error.pal_err_MUX2_LUT5_O_1_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\galve\DOWNLO~1\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 10.1  Source u_generador_error.pal_err_MUX2_LUT5_O_1_LC.OF
+Info:  5.9 16.0    Net u_generador_error.pal_err[6] budget 5.654839 ns (33,17) -> (40,0)
+Info:                Sink pal_err_OBUF_O_1$iob.I
+Info:                Defined in:
+Info:                  ../design/top.sv:47.21-52.6
+Info:                  ../design/generador_error.sv:30.24-30.31
+Info: 2.5 ns logic, 13.5 ns routing
+
+Info: Max delay <async> -> <async>: 16.01 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 21025,  21794) |**** 
+Info: [ 21794,  22563) |** 
+Info: [ 22563,  23332) |** 
+Info: [ 23332,  24101) | 
+Info: [ 24101,  24870) | 
+Info: [ 24870,  25639) |* 
+Info: [ 25639,  26408) |* 
+Info: [ 26408,  27177) | 
+Info: [ 27177,  27946) |*** 
+Info: [ 27946,  28715) |***** 
+Info: [ 28715,  29484) |**************************************************** 
+Info: [ 29484,  30253) |************************ 
+Info: [ 30253,  31022) |******************* 
+Info: [ 31022,  31791) |************** 
+Info: [ 31791,  32560) |******** 
+Info: [ 32560,  33329) |** 
+Info: [ 33329,  34098) |********** 
+Info: [ 34098,  34867) | 
+Info: [ 34867,  35636) |* 
+Info: [ 35636,  36405) |******** 
+
+Info: Program finished normally.

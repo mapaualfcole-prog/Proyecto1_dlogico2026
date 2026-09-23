@@ -1,0 +1,118 @@
+$date
+	Wed Sep 23 08:54:13 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module generador_error_tb $end
+$var wire 8 ! pal_err [7:0] $end
+$var reg 8 " pal_cod [7:0] $end
+$var reg 3 # pos_err1 [2:0] $end
+$var reg 3 $ pos_err2 [2:0] $end
+$var integer 32 % caso [31:0] $end
+$var integer 32 & errores [31:0] $end
+$scope module dut $end
+$var wire 8 ' pal_cod [7:0] $end
+$var wire 8 ( pal_err [7:0] $end
+$var wire 3 ) pos_err1 [2:0] $end
+$var wire 3 * pos_err2 [2:0] $end
+$var wire 8 + mask2 [7:0] $end
+$var wire 8 , mask1 [7:0] $end
+$upscope $end
+$scope task probar $end
+$var reg 8 - cod [7:0] $end
+$var reg 8 . esperado [7:0] $end
+$var reg 3 / p1 [2:0] $end
+$var reg 3 0 p2 [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 0
+b0 /
+b1010101 .
+b1010101 -
+b0 ,
+b0 +
+b0 *
+b0 )
+b1010101 (
+b1010101 '
+b0 &
+b1 %
+b0 $
+b0 #
+b1010101 "
+b1010101 !
+$end
+#10000
+b1 ,
+b1 !
+b1 (
+b1 #
+b1 )
+b0 "
+b0 '
+b10 %
+b1 .
+b1 /
+b0 -
+#20000
+b1000000 !
+b1000000 (
+b1000000 ,
+b111 #
+b111 )
+b11 %
+b1000000 .
+b111 /
+#30000
+b1000 !
+b1000 (
+b1000 +
+b0 ,
+b100 $
+b100 *
+b0 #
+b0 )
+b100 %
+b1000 .
+b100 0
+b0 /
+#40000
+b10010 !
+b10010 (
+b10000 +
+b10 ,
+b101 $
+b101 *
+b10 #
+b10 )
+b101 %
+b10010 .
+b101 0
+b10 /
+#50000
+b100000 +
+b100 ,
+b1011011 !
+b1011011 (
+b110 $
+b110 *
+b11 #
+b11 )
+b1111111 "
+b1111111 '
+b110 %
+b1011011 .
+b110 0
+b11 /
+b1111111 -
+#60000
