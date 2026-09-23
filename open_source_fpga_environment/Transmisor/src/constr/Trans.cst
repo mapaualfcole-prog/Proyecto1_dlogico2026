@@ -1,0 +1,98 @@
+IO_LOC  "pal_err[7]" 70;
+IO_PORT "pal_err[7]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "pal_err[6]" 71;
+IO_PORT "pal_err[6]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "pal_err[5]" 72;
+IO_PORT "pal_err[5]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "pal_err[4]" 73;
+IO_PORT "pal_err[4]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "pal_err[3]" 74;
+IO_PORT "pal_err[3]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "pal_err[2]" 75;
+IO_PORT "pal_err[2]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "pal_err[1]" 76;
+IO_PORT "pal_err[1]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "pal_err[0]" 77;
+IO_PORT "pal_err[0]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "seg[6]" 57;
+IO_PORT "seg[6]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "seg[5]" 69;
+IO_PORT "seg[5]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "seg[4]" 68;
+IO_PORT "seg[4]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "seg[3]" 32;
+IO_PORT "seg[3]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "seg[2]" 56;
+IO_PORT "seg[2]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "seg[1]" 55;
+IO_PORT "seg[1]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "seg[0]" 54;
+IO_PORT "seg[0]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "p_err2[2]" 53;
+IO_PORT "p_err2[2]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "p_err2[1]" 51;
+IO_PORT "p_err2[1]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "p_err2[0]" 42;
+IO_PORT "p_err2[0]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "p_err1[2]" 41;
+IO_PORT "p_err1[2]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "p_err1[1]" 35;
+IO_PORT "p_err1[1]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "p_err1[0]" 40;
+IO_PORT "p_err1[0]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "pal_cod[7]" 34;
+IO_PORT "pal_cod[7]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "pal_cod[6]" 33;
+IO_PORT "pal_cod[6]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "pal_cod[5]" 30;
+IO_PORT "pal_cod[5]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "pal_cod[4]" 29;
+IO_PORT "pal_cod[4]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "pal_cod[3]" 28;
+IO_PORT "pal_cod[3]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "pal_cod[2]" 27;
+IO_PORT "pal_cod[2]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "pal_cod[1]" 26;
+IO_PORT "pal_cod[1]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "pal_cod[0]" 25;
+IO_PORT "pal_cod[0]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "datos[3]" 39;
+IO_PORT "datos[3]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "datos[2]" 36;
+IO_PORT "datos[2]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "datos[1]" 37;
+IO_PORT "datos[1]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "datos[0]" 38;
+IO_PORT "datos[0]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
