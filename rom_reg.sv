@@ -7,7 +7,7 @@ module rom_reg (a, d) ;
    parameter b = 32;
    parameter w = 4;
    //TT is stored in a text file
-   parameter fileName = "dataFile";
+   parameter fileName = "bcdtable.txt";
   input [w-1:0] a;
   output [b-1:0] d;
   reg [b-1:0]    rom [2**w-1:0] ; //Array declaration
