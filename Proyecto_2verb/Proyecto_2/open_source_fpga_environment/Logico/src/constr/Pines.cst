@@ -1,0 +1,85 @@
+// ============================================================
+// PROYECTO 2 - RESTADOR
+// Tang Nano 9K - GW1NR-LV9QN88PC6/I5
+// Display 4 digitos catodo comun con transistores NPN
+// Teclado hexadecimal 4x4 con resistencias pull-down externas
+// ============================================================
+
+// ---------------- RELOJ 27 MHz ----------------
+IO_LOC "clk" 52;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+// ---------------- RESET ----------------
+// Boton S1 de la Tang Nano 9K, activo en bajo
+IO_LOC "rst_n" 4;
+IO_PORT "rst_n" IO_TYPE=LVCMOS18 PULL_MODE=UP;
+
+// ---------------- FILAS DEL TECLADO ----------------
+// Cada fila lleva una resistencia pull-down externa de 10k a GND
+// Las entradas se activan en alto al presionar una tecla
+
+IO_LOC "rows[0]" 42;
+IO_LOC "rows[1]" 51;
+IO_LOC "rows[2]" 53;
+IO_LOC "rows[3]" 54;
+
+IO_PORT "rows[0]" IO_TYPE=LVCMOS33 PULL_MODE=NONE;
+IO_PORT "rows[1]" IO_TYPE=LVCMOS33 PULL_MODE=NONE;
+IO_PORT "rows[2]" IO_TYPE=LVCMOS33 PULL_MODE=NONE;
+IO_PORT "rows[3]" IO_TYPE=LVCMOS33 PULL_MODE=NONE;
+
+// ---------------- COLUMNAS DEL TECLADO ----------------
+// Salidas de barrido de la FPGA
+
+IO_LOC "cols[0]" 55;
+IO_LOC "cols[1]" 56;
+IO_LOC "cols[2]" 57;
+IO_LOC "cols[3]" 68;
+
+IO_PORT "cols[0]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "cols[1]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "cols[2]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "cols[3]" IO_TYPE=LVCMOS33 DRIVE=8;
+
+// ---------------- DISPLAY DE 7 SEGMENTOS ----------------
+// Display catodo comun
+// seg[6:0] = a, b, c, d, e, f, g
+// Segmentos activos en alto (1 = encendido)
+// Cada segmento conectado mediante resistencia de 220 ohm
+
+IO_LOC "seg[6]" 77;  // Segmento a
+IO_LOC "seg[5]" 76;  // Segmento b
+IO_LOC "seg[4]" 75;  // Segmento c
+IO_LOC "seg[3]" 74;  // Segmento d
+IO_LOC "seg[2]" 73;  // Segmento e
+IO_LOC "seg[1]" 72;  // Segmento f
+IO_LOC "seg[0]" 71;  // Segmento g
+
+IO_PORT "seg[6]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "seg[5]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "seg[4]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "seg[3]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "seg[2]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "seg[1]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "seg[0]" IO_TYPE=LVCMOS33 DRIVE=8;
+
+// ---------------- HABILITACION DE DIGITOS ----------------
+// Cuatro transistores NPN
+// Cada base conectada mediante resistencia de 1k
+// Emisores a GND
+// Colectores a los catodos comunes del display
+// Habilitacion activa en alto
+
+IO_LOC "an[0]" 38;  // Digito 0 - unidades
+IO_LOC "an[1]" 37;  // Digito 1 - decenas
+IO_LOC "an[2]" 36;  // Digito 2 - centenas
+IO_LOC "an[3]" 39;  // Digito 3 - signo
+
+IO_PORT "an[0]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "an[1]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "an[2]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "an[3]" IO_TYPE=LVCMOS33 DRIVE=8;
+
+// ---------------- PUNTO DECIMAL ----------------
+// El pin 70 no se utiliza en el modulo restador.
+// No se declara porque restador.sv no tiene salida DP.
